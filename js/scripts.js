@@ -12,6 +12,7 @@ var validator = function(userInput){
       colorChange(userInput);
       createList(userInput);
       pingPongList(numberList);
+      animateList(numberList, "#animation h1");
       appendList(numberList, "#numberList ul");
       $("form button").text("Play Again!");
     } else {
@@ -61,6 +62,20 @@ var appendList = function(list, ul){
   for (var i=0; i<list.length; i++) {
       $(ul).append("<li>" + list[i] + "</li>");
   }
+};
+
+//Animate list
+var animateList = function(list, h1){
+  var i = 0;
+  (function cycle() {
+      if (i < list.length) {
+          $(h1).text(list[i])
+                        .fadeIn(300)
+                        .delay(800)
+                        .fadeOut(300, cycle);
+          i++;
+      }
+  })();
 };
 
 // User Interface Logic

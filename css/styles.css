@@ -54,6 +54,11 @@ label {
   padding-top: 10vh;
 }
 
+/*Animation Styling*/
+#animation {
+  min-height: 60vh;
+}
+
 /*Number List Styling*/
 #numberList {
   display: none;
