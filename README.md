@@ -36,6 +36,11 @@ _This application will take a number that the user inputs and display a list tha
   * **Example Output:** [..."ping",13,14,"pingpong"]
 
 
+* It can return an error if the user input is blank.
+  * **Example Input:** ""
+  * **Example Output:** error message
+
+
 * It can return an error if the user input is not a number.
   * **Example Input:** "hello"
   * **Example Output:** error message

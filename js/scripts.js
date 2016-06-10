@@ -35,7 +35,14 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
     //Set variables
-    var userNumber = parseInt($("#userNumber").val());
+    var userNumber = $("#userNumber").val();
+    //Validate user number
+    if (userNumber) {
+      parseInt(userNumber);
+      console.log(userNumber);
+    } else {
+      alert("Please enter a valid number");
+    }
     //Run functions
     createList(userNumber);
     pingPongList(numberList);
