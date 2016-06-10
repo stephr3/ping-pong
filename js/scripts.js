@@ -113,4 +113,10 @@ $(document).ready(function(){
     $("#landingPage").hide();
     $("#gamePage").show();
   });
+
+  //Stop animation button functionality
+  $("#animateToggle").click(function(event){
+    event.preventDefault;
+    j = numberList.length;
+  });
 });

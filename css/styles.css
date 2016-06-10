@@ -63,14 +63,13 @@ label {
   font-size: 12vw;
 }
 
-/*Question for Code Review...*/
-
-/*#animation .checkbox-inline {
-  position:absolute;
+#animation button {
+  position: absolute;
+  width: 120px;
   bottom: 10vh;
-  left:50vw;
-  margin-left:-50px;
-}*/
+  left: 50vw;
+  margin-left: -60px;
+}
 
 /*Number List Styling*/
 #numberList {
