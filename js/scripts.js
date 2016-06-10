@@ -11,7 +11,9 @@ var createList = function(upperNumber){
 
 var pingPongList = function(numberList) {
   for (var i=0; i<numberList.length; i++) {
-    if ((numberList[i] % 5) === 0) {
+    if ((numberList[i] % 15) === 0) {
+      numberList[i] = "pingpong";
+    } else if ((numberList[i] % 5) === 0) {
       numberList[i] = "pong";
     } else if ((numberList[i] % 3) === 0){
       numberList[i] = "ping";
