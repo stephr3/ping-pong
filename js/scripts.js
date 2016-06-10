@@ -37,7 +37,7 @@ $(document).ready(function(){
     //Set variables
     var userNumber = $("#userNumber").val();
     //Validate user number
-    if (userNumber) {
+    if (userNumber && !isNaN(userNumber)) {
       parseInt(userNumber);
       console.log(userNumber);
     } else {
