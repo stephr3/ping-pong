@@ -2,6 +2,7 @@
 
 //Set up global variables
 var numberList = [];
+var j = 0;
 
 //Validate user number
 var validator = function(userInput){
@@ -72,16 +73,16 @@ var appendList = function(list, ul){
 
 //Animate list
 var animateList = function(list, h1){
-  var i = 0;
-  (function cycle() {
-      if (i < list.length) {
-          $(h1).text(list[i])
-                        .fadeIn(300)
-                        .delay(800)
-                        .fadeOut(300, cycle);
-          i++;
-      }
-  })();
+    j = 0;
+    (function cycle() {
+        if (j < list.length) {
+            $(h1).text(list[j])
+                          .fadeIn(300)
+                          .delay(800)
+                          .fadeOut(300, cycle);
+            j++;
+        }
+    })();
 };
 
 // User Interface Logic

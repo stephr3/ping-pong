@@ -63,12 +63,14 @@ label {
   font-size: 12vw;
 }
 
-#animation .checkbox-inline {
+/*Question for Code Review...*/
+
+/*#animation .checkbox-inline {
   position:absolute;
   bottom: 10vh;
   left:50vw;
   margin-left:-50px;
-}
+}*/
 
 /*Number List Styling*/
 #numberList {
