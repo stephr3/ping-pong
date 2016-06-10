@@ -12,7 +12,7 @@ var validator = function(userInput){
       createList(userInput);
       pingPongList(numberList);
       appendList(numberList, "#numberList ul");
-      console.log(numberList);
+      $("form button").text("Play Again!");
     } else {
       $("#validate").addClass("has-error");
       $("#negativeNumber").show();
@@ -53,6 +53,7 @@ var appendList = function(list, ul){
 // User Interface Logic
 
 $(document).ready(function(){
+
   //Submit button functionality
   $("form").submit(function(event){
     event.preventDefault();
