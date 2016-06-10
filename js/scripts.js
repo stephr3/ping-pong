@@ -1,4 +1,4 @@
-//Business Logic
+////////Business Logic////////
 
 //Set up global variables
 var numberList = [];
@@ -35,15 +35,16 @@ var validator = function(userInput){
 //Change background color
 var colorChange = function(userNumber){
   if(userNumber <= 10){
-    $("body").css("background-color", "red");
+    $("body").css("background-color", "#2F7A41");
   } else if (userNumber <= 20){
-    $("body").css("background-color", "blue");
+    $("body").css("background-color", "#1F522C");
   } else if (userNumber <= 30){
-    $("body").css("background-color", "pink");
+    $("body").css("background-color", "#14361D");
   }else {
     $("body").css("background-color", "#3B9C53");
   }
 };
+
 //Count up to user number
 var createList = function(upperNumber){
   for (var i=1; i<=upperNumber; i++) {
@@ -85,7 +86,7 @@ var animateList = function(list, h1){
     })();
 };
 
-// User Interface Logic
+////////User Interface Logic////////
 
 $(document).ready(function(){
 

@@ -36,12 +36,13 @@ label {
 }
 
 #landingPage h1 {
-  font-size: 5em;
-  padding-top: 63vh;
+  font-size: 4.5em;
+  padding-top: 55vh;
 }
 
 #landingPage button {
-  margin-top: 5vh;
+  margin-top: 10vh;
+  bottom: 5vh;
   min-width: 100px;
 }
 
@@ -52,6 +53,7 @@ label {
 
 #gamePage h1{
   padding-top: 10vh;
+  padding-bottom: 2vh;
 }
 
 /*Animation Styling*/
@@ -74,8 +76,8 @@ label {
 /*Number List Styling*/
 #numberList {
   display: none;
-  font-size: 2em;
-  margin-top: 2vh;
+  font-size: 3em;
+  margin-top: 5vh;
   text-align: center;
 }
 
