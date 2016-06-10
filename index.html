@@ -10,22 +10,25 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Ping Pong</h1>
-
-      <form>
-        <div id="validate" class="form-group">
-          <label for="userNumber">To get started, enter a number greater than 0.</label>
-          <input type="text" id="userNumber" class="form-control">
-          <label id="invalid" for="userNumber" class="control-label">Please enter a valid number.</label>
-          <label class="control-label" id="negativeNumber">Please enter a number greater than 0.</label>
+    <div class="#gamePage">
+      <div class="container">
+        <h1>Ping Pong</h1>
+        <div class="centered">
+          <form>
+            <div id="validate" class="form-group">
+              <label for="userNumber">How high do you want to count? Enter your number here.</label>
+              <input type="text" id="userNumber" class="form-control">
+              <label id="invalid" for="userNumber" class="control-label">Please enter a valid number.</label>
+              <label class="control-label" id="negativeNumber">Please enter a number greater than 0.</label>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg">Let's Ping Pong!</button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">Let's Ping Pong!</button>
-      </form>
-
-      <div id="numberList">
-        <ul>
-        </ul>
+        <div id="numberList">
+          <ul>
+            
+          </ul>
+        </div>
       </div>
     </div>
   </body>

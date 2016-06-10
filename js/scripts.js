@@ -46,7 +46,7 @@ var pingPongList = function(numberList) {
 //Append list to HTML
 var appendList = function(list, ul){
   for (var i=0; i<list.length; i++) {
-    $(ul).append("<li>" + list[i] + "</li>");
+      $(ul).append("<li>" + list[i] + "</li>");
   }
 };
 
