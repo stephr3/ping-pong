@@ -73,7 +73,6 @@ var appendList = function(list, ul){
 //Animate list
 var animateList = function(list, h1){
   var i = 0;
-  $("#animationToggle").show();
   (function cycle() {
       if (i < list.length) {
           $(h1).text(list[i])
