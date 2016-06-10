@@ -14,9 +14,11 @@
       <h1>Ping Pong</h1>
 
       <form>
-        <div class="form-group">
-          <label for="userNumber">Please enter a number greater than 0.</label>
+        <div id="validate" class="form-group">
+          <label for="userNumber">To get started, enter a number greater than 0.</label>
           <input type="text" id="userNumber" class="form-control">
+          <label id="invalid" for="userNumber" class="control-label">Please enter a valid number.</label>
+          <label class="control-label" id="negativeNumber">Please enter a number greater than 0.</label>
         </div>
         <button type="submit" class="btn btn-primary">Let's Ping Pong!</button>
       </form>

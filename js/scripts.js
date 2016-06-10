@@ -14,10 +14,12 @@ var validator = function(userInput){
       appendList(numberList, "#numberList ul");
       console.log(numberList);
     } else {
-      alert("Please enter a number greater than 0.");
+      $("#validate").addClass("has-error");
+      $("#negativeNumber").show();
     }
   } else {
-    alert("Please enter a valid number");
+    $("#validate").addClass("has-error");
+    $("#invalid").show();
   }
 };
 
@@ -54,10 +56,12 @@ $(document).ready(function(){
   //Submit button functionality
   $("form").submit(function(event){
     event.preventDefault();
-    //Reset number list
+    //Reset
     numberList = [];
     console.log(numberList);
     $("#numberList ul").empty();
+    $(".control-label").hide();
+    $("#validate").removeClass("has-error");
     //Set variables
     var userNumber = $("#userNumber").val();
     //Validate user input and run functions
