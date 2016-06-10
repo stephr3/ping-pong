@@ -30,6 +30,9 @@ label {
   font-weight: normal;
 }
 
+#gamePage {
+  display:none;
+}
 #numberList {
   font-size: 2em;
   text-align: center;

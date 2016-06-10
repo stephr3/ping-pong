@@ -69,4 +69,11 @@ $(document).ready(function(){
     //Display for user
     $("#numberList").show();
   });
+
+  //Start button functionality
+  $("#landingPage button").click(function(event){
+    event.preventDefault;
+    $("#landingPage").hide();
+    $("#gamePage").show();
+  });
 });
