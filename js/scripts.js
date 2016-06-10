@@ -9,6 +9,7 @@ var validator = function(userInput){
     parseInt(userInput);
     //Run functions
     if (userInput > 0) {
+      colorChange(userInput);
       createList(userInput);
       pingPongList(numberList);
       appendList(numberList, "#numberList ul");
@@ -23,6 +24,18 @@ var validator = function(userInput){
   }
 };
 
+//Change background color
+var colorChange = function(userNumber){
+  if(userNumber <= 10){
+    $("body").css("background-color", "red");
+  } else if (userNumber <= 20){
+    $("body").css("background-color", "blue");
+  } else if (userNumber <= 30){
+    $("body").css("background-color", "pink");
+  }else {
+    $("body").css("background-color", "#3B9C53");
+  }
+};
 //Count up to user number
 var createList = function(upperNumber){
   for (var i=1; i<=upperNumber; i++) {
