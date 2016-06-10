@@ -9,6 +9,14 @@ var createList = function(upperNumber){
   }
 };
 
+var pingPongList = function(numberList) {
+  for (var i=0; i<numberList.length; i++) {
+    if ((numberList[i] % 3) === 0){
+      numberList[i] = "ping";
+    }
+  }
+};
+
 var appendList = function(list, div){
   for (var i=0; i<list.length; i++) {
     $(div).append("<li>" + list[i] + "</li>");
@@ -23,12 +31,13 @@ $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
     //Set variables
-    var userNumber = $("#userNumber").val();
+    var userNumber = parseInt($("#userNumber").val());
     //Run functions
     createList(userNumber);
+    pingPongList(numberList);
     appendList(numberList, "#numberList");
-
+    console.log(numberList);
+    //Display for user
     $("#numberList").show();
-
   });
 });
