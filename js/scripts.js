@@ -54,6 +54,9 @@ $(document).ready(function(){
   //Submit button functionality
   $("form").submit(function(event){
     event.preventDefault();
+    //Reset number list
+    numberList = [];
+    console.log(numberList);
     //Set variables
     var userNumber = $("#userNumber").val();
     //Validate user input and run functions
