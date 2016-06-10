@@ -14,6 +14,7 @@ _This application will take a number that the user inputs and display a list tha
 * _Open index.html in your browser of choice._
 * _Write a positive number and click the submit button._
 * _You can write a new number in the text box to play again!_
+* _You can also check out the page here: <http://stephr3.github.io/ping-pong/>_
 
 ## Specifications
 * It can count up to the provided number.
