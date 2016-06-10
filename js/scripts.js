@@ -11,7 +11,7 @@ var validator = function(userInput){
     if (userInput > 0) {
       createList(userInput);
       pingPongList(numberList);
-      appendList(numberList, "#numberList");
+      appendList(numberList, "#numberList ul");
       console.log(numberList);
     } else {
       alert("Please enter a number greater than 0.");
@@ -42,9 +42,9 @@ var pingPongList = function(numberList) {
 };
 
 //Append list to HTML
-var appendList = function(list, div){
+var appendList = function(list, ul){
   for (var i=0; i<list.length; i++) {
-    $(div).append("<li>" + list[i] + "</li>");
+    $(ul).append("<li>" + list[i] + "</li>");
   }
 };
 
@@ -57,6 +57,7 @@ $(document).ready(function(){
     //Reset number list
     numberList = [];
     console.log(numberList);
+    $("#numberList ul").empty();
     //Set variables
     var userNumber = $("#userNumber").val();
     //Validate user input and run functions
