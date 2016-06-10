@@ -56,7 +56,7 @@ label {
 
 /*Animation Styling*/
 #animation {
-  min-height: 60vh;
+  display:none;
 }
 
 /*Number List Styling*/

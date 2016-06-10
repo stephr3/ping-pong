@@ -12,8 +12,13 @@ var validator = function(userInput){
       colorChange(userInput);
       createList(userInput);
       pingPongList(numberList);
-      animateList(numberList, "#animation h1");
-      appendList(numberList, "#numberList ul");
+      if($("#radioAnimate").is(":checked")){
+        $("#animation").show();
+        animateList(numberList, "#animation h1");
+      } else if ($("#radioList").is(":checked")) {
+        $("#numberList").show();
+        appendList(numberList, "#numberList ul");
+      }
       $("form button").text("Play Again!");
     } else {
       $("#validate").addClass("has-error");
@@ -91,6 +96,8 @@ $(document).ready(function(){
     $("#numberList ul").empty();
     $(".control-label").hide();
     $("#validate").removeClass("has-error");
+    $("#animation").hide();
+    $("#numberList").hide();
     //Set variables
     var userNumber = $("#userNumber").val();
     //Validate user input and run functions
