@@ -1,0 +1,7 @@
+#numberList {
+  display: none;
+}
+
+#numberList ul {
+  list-style: none;
+}
